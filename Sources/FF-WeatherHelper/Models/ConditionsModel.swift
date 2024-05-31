@@ -1,7 +1,7 @@
 import Foundation
 
 struct ConditionsModel: Codable, Identifiable {
-    let id = UUID()
+    public let id = UUID()
     
     public let text: String
     public let ident: String?
