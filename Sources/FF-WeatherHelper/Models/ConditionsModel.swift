@@ -4,11 +4,11 @@ struct ConditionsModel: Codable, Identifiable {
     let id = UUID()
     
     public let text: String
-    let ident: String?
+    public let ident: String?
     public let tempC: Double?
-    let relativeHumidity: Int? // [0:100]
+    public let relativeHumidity: Int? // [0:100]
     public let weather: [String]
-    let dateIssued: String
+    public let dateIssued: String
     
     enum CodingKeys: String, CodingKey {
         case text = "text"
