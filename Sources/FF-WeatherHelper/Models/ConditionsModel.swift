@@ -1,6 +1,6 @@
 import Foundation
 
-struct ConditionsModel: Codable, Identifiable {
+public struct ConditionsModel: Codable, Identifiable {
     public let id = UUID()
     
     public let text: String
