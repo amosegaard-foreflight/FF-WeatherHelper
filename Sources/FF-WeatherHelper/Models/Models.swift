@@ -2,13 +2,13 @@ import Foundation
 
 public struct CloudLayer: Codable {
     public let coverage: String
-    public let altitudeFt: Int
+    public let altitudeFt: Double
     public let ceiling: Bool
 }
 
 public struct Visibility: Codable {
-    public let distanceSm: Int
-    public let prevailingVisSm: Int?
+    public let distanceSm: Double
+    public let prevailingVisSm: Double?
     public let distanceQualifier: Int?
     public let prevailingVisDistanceQualifier: Int?
 }
@@ -16,7 +16,7 @@ public struct Visibility: Codable {
 public struct Wind: Codable {
     public let speedKts: Double
     public let gustSpeedKts: Double?
-    public let direction: Int
+    public let direction: Int?
     public let from: Int?
     public let variable: Bool
 }
@@ -36,16 +36,16 @@ public struct ConditionsModel: Codable, Identifiable {
     public let pressureHg: Double?
     public let pressureHpa: Double?
     public let reportedAsHpa: Bool?
-    public let densityAltitudeFt: Int?
+    public let densityAltitudeFt: Double?
     public let relativeHumidity: Int? // [0:100]
     public let flightRules: String?
     public let cloudLayers: [CloudLayer]
     public let cloudLayersV2: [CloudLayer]
     public let weather: [String]
-    public let dateIssued: String
+    public let dateIssued: String?
     public let lat: Double?
     public let lon: Double?
-    public let elevationFt: Int?
+    public let elevationFt: Double?
     public let visibility: Visibility?
     public let wind: Wind?
     public let period: Period?
@@ -64,7 +64,7 @@ public struct ForecastModel: Codable, Identifiable {
     public let period: Period
     public let lat: Double?
     public let lon: Double?
-    public let elevationFt: Int?
+    public let elevationFt: Double?
     public let conditions: [ConditionsModel]?
     
     enum CodingKeys: String, CodingKey {
@@ -74,9 +74,9 @@ public struct ForecastModel: Codable, Identifiable {
 
 public struct WindTemps: Codable {
     public let directionFromTrue: Int
-    public let knots: Int
-    public let celsius: Int
-    public let altitude: Int
+    public let knots: Double
+    public let celsius: Double
+    public let altitude: Double
     public let isLightAndVariable: Bool
     public let isGreaterThan199Knots: Bool
     public let turbulence: Bool
@@ -126,4 +126,3 @@ public struct WeatherReportModel: Codable, Identifiable {
         case report
     }
 }
-
