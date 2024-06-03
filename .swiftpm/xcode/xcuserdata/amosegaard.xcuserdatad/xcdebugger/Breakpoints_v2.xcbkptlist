@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3F5509EB-A74A-438B-B1ED-34B35B62134C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A5A4C8F-C95A-477C-9BA1-561AE98A2B0B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/FF-WeatherHelperTests/FF_WeatherHelperTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "testRequestWorks()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C43D6E11-6E8E-474B-9BBA-D8F89A71C92B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/FF-WeatherHelperTests/FF_WeatherHelperTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "testRequestWorks()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8587944D-42AE-4861-BF27-A2EC5E452B71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/FF-WeatherHelperTests/FF_WeatherHelperTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "testRequestWorks()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8587944D-42AE-4861-BF27-A2EC5E452B71 - 7e249d3b5d5fd357"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for FF_WeatherHelperTests.FF_WeatherHelperTests.testRequestWorks() async throws -&gt; ()"
+                  moduleName = "FF-WeatherHelperTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amosegaard/Developer/FF-WeatherHelper/Tests/FF-WeatherHelperTests/FF_WeatherHelperTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33">
+               </Location>
+               <Location
+                  uuid = "8587944D-42AE-4861-BF27-A2EC5E452B71 - 7e249d3b5d5fd336"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for FF_WeatherHelperTests.FF_WeatherHelperTests.testRequestWorks() async throws -&gt; ()"
+                  moduleName = "FF-WeatherHelperTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amosegaard/Developer/FF-WeatherHelper/Tests/FF-WeatherHelperTests/FF_WeatherHelperTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

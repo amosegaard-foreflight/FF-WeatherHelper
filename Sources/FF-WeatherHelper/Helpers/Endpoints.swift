@@ -11,13 +11,13 @@ struct EndPoints {
     static func weatherReport(identifier: String) throws -> URLRequest {
         components.path = "/weather/report/"
         
-        guard let url = components.url?.appending(path: identifier) else {
+        guard let url = components.url?.appending(path: identifier.lowercased() ) else {
             throw RequestError.invalidUrl
         }
         
         var request = URLRequest(url: url )
         request.httpMethod = "GET"
-        request.setValue("ff-coding-exercise", forHTTPHeaderField: "1")
+        request.setValue("1", forHTTPHeaderField: "ff-coding-exercise")
 
         return request
     }

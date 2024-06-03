@@ -1,5 +1,6 @@
 import Foundation
 
+/*
 public struct ForecastModel: Codable, Identifiable {
     public let id = UUID()
     
@@ -15,3 +16,4 @@ public struct ForecastModel: Codable, Identifiable {
         case conditions = "conditions"
     }
 }
+*/

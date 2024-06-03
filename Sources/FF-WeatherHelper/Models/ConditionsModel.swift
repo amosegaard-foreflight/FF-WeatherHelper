@@ -1,5 +1,6 @@
 import Foundation
 
+/*
 public struct ConditionsModel: Codable, Identifiable {
     public let id = UUID()
     
@@ -19,3 +20,4 @@ public struct ConditionsModel: Codable, Identifiable {
         case dateIssued = "dateIssued"
     }
 }
+*/

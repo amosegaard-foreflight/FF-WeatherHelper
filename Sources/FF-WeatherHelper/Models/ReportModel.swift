@@ -1,5 +1,7 @@
 import Foundation
 
+
+/*
 public struct ReportModel: Codable, Identifiable {
     public let id = UUID()
     public var conditions: ConditionsModel
@@ -10,3 +12,4 @@ public struct ReportModel: Codable, Identifiable {
         case forecast = "forecast"
     }
 }
+*/
