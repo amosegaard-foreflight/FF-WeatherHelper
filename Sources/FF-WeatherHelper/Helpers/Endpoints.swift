@@ -1,6 +1,10 @@
 import Foundation
 
-struct EndPoints {
+/// Contains endpoints for the ForeFlight Weather API
+public struct EndPoints {
+    /// Creates the base URL components for the API
+    /// 
+    /// - Returns: URLComponents configured with the base API URL
     private static func createComponents() -> URLComponents {
         var c = URLComponents()
         c.scheme = "https"
@@ -8,7 +12,12 @@ struct EndPoints {
         return c
     }
 
-    static func weatherReport(identifier: String) throws -> URLRequest {
+    /// Creates a URLRequest for fetching weather report for a specific identifier
+    /// 
+    /// - Parameter identifier: The location identifier (e.g., ICAO code)
+    /// - Returns: A configured URLRequest
+    /// - Throws: RequestError if the URL cannot be constructed
+    public static func weatherReport(identifier: String) throws -> URLRequest {
         var components = createComponents()
         components.path = "/weather/report/"
         
@@ -23,4 +32,3 @@ struct EndPoints {
         return request
     }
 }
-

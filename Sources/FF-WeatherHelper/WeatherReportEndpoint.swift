@@ -1,7 +1,18 @@
 import Foundation
 
+/// Main class for fetching weather reports from the ForeFlight API
 public class WeatherReportEndpoint {
     
+    /// Fetches weather report for a specific location identifier
+    /// 
+    /// - Parameter identifier: The location identifier (e.g., ICAO code)
+    /// - Returns: A WeatherReportModel containing the weather information
+    /// - Throws: RequestError for various failure conditions:
+    ///   - invalidInput: If identifier is empty or invalid
+    ///   - internetNotReachable: If there's no internet connection
+    ///   - serverError: If the server returns a 5xx error
+    ///   - couldNotParseData: If the response cannot be parsed
+    ///   - unknown: For other unexpected errors
     public static func fetchWeatherFor(identifier: String) async throws -> WeatherReportModel {
         guard !identifier.isEmpty else { throw RequestError.invalidInput }
         let request = try EndPoints.weatherReport(identifier: identifier)
@@ -43,7 +54,11 @@ public class WeatherReportEndpoint {
         }
     }
     
-    static func fetchCachedWeatherFor(identifier: String) async -> WeatherReportModel? {
+    /// Attempts to fetch a cached weather report for a location
+    /// 
+    /// - Parameter identifier: The location identifier (e.g., ICAO code)
+    /// - Returns: A WeatherReportModel if found in cache, nil otherwise
+    public static func fetchCachedWeatherFor(identifier: String) async -> WeatherReportModel? {
         do {
             let request = try EndPoints.weatherReport(identifier: identifier)
             
@@ -56,5 +71,4 @@ public class WeatherReportEndpoint {
         }
         return nil
     }
-    
 }
