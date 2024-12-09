@@ -1,8 +1,21 @@
 import Foundation
 
-enum RequestError: Error {
-    case unknown, invalidUrl, internetNotReachable, couldNotParseData, invalidInput, serverError
+/// Represents possible errors that can occur during API requests
+public enum RequestError: Error {
+    /// An unknown error occurred
+    case unknown
+    /// The URL provided is invalid
+    case invalidUrl
+    /// No internet connection is available
+    case internetNotReachable
+    /// The response data could not be parsed
+    case couldNotParseData
+    /// The input provided is invalid
+    case invalidInput
+    /// A server error occurred (5xx status code)
+    case serverError
     
+    /// Human-readable description of the error
     public var errorDescription: String {
         switch self {
         case .invalidUrl:
@@ -14,7 +27,7 @@ enum RequestError: Error {
         case .invalidInput:
             return "Invalid input"
         case .serverError:
-            return "Invalid input"
+            return "Server error occurred"
         default:
             return "Unknown error"
         }
